@@ -435,6 +435,11 @@
             <option name="tagName" value="outputText" />
             <option name="attributeName" value="value" />
           </SafeTagInfo>
+          <SafeTagInfo>
+            <option name="namespace" value="http://xmlns.jcp.org/jsf/html" />
+            <option name="tagName" value="inputText" />
+            <option name="attributeName" value="value" />
+          </SafeTagInfo>
         </list>
       </option>
     </inspection_tool>
