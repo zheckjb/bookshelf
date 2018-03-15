@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+<ui:composition template="template.xhtml">
+    <f:metadata>
+        <f:viewParam name="id" value="#{bookDetailsForm.bookId}"/>
+        <f:viewAction action="#{bookDetailsForm.findBook()}"/>
+    </f:metadata>
+    <ui:define name="title">Book details</ui:define>
+    <ui:define name="blablabla">
+        <h:panelGroup id="list" styleClass="w3-row">
+                <div class="w3-col s12 m6 l3 w3-padding">
+                    <div class="w3-card-4">
+                        <img src="http://via.placeholder.com/250x250" style="width: 100%" alt="#{bookDetailsForm.book.title}"/>
+                        <div class="w3-container">
+                            <h4 style="text-overflow: ellipsis; overflow: hidden; white-space: nowrap">
+                                <b>
+                                    <h:outputLabel value="#{bookDetailsForm.book.title}"/>
+                                </b>
+                            </h4>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="w3-col s12 m6 l9 w3-padding">
+                    <p>
+                        <h:outputLabel value="#{bookDetailsForm.book.description}"/>
+                    </p>
+
+                </div>
+        </h:panelGroup>
+    </ui:define>
+</ui:composition>
+</html>

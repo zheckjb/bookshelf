@@ -1,4 +1,4 @@
-package lv.tsi;
+package lv.tsi.entities;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
