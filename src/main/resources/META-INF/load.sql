@@ -12,6 +12,6 @@ INSERT INTO BOOK (ID, AUTHOR, DESCRIPTION, ISBN, TITLE, YEAR) VALUES (4, 'Imran 
 INSERT INTO BOOK (ID, AUTHOR, DESCRIPTION, ISBN, TITLE, YEAR) VALUES (5, 'Serafin Archuleta Arroyo', 'Morbi nec lorem sit amet eros vehicula suscipit ac sed dui.', '99-9230-262-3', 'El Castillo Modelo', 2010);
 INSERT INTO BOOK (ID, AUTHOR, DESCRIPTION, ISBN, TITLE, YEAR) VALUES (6, 'Imran Kuilboer', 'Proin lobortis, eros id luctus pretium, ex ipsum tempus dui, quis fringilla nisi augue in lorem. Nunc augue magna, euismod eget magna non, aliquet dictum erat.', '95-8897-650-2', 'La Mora Ingeniero', 1999);
 
-INSERT INTO USER (ID, FULL_NAME) VALUES (1, 'Vasya Pupkin');
-INSERT INTO USER (ID, FULL_NAME) VALUES (2, 'James Bond');
+INSERT INTO USER (ID, FULL_NAME, EMAIL, PASSWORD) VALUES (-1, 'John Smith', 'john.smith@fake.com', '12345');
+INSERT INTO USER (ID, FULL_NAME, EMAIL, PASSWORD) VALUES (-2, 'Mike Johnson', 'mike@company.com', '54321');
 
