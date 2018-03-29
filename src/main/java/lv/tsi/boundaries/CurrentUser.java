@@ -18,11 +18,14 @@ public class CurrentUser implements Serializable {
     private Long userId;
     private User signedInUser;
 
+
     @Transactional
-    public void signIn() {
-        userId = 1L;
-        signedInUser = em.find(User.class, userId);
+    public String signIn() {
+//        userId = 1L;
+//        signedInUser = em.find(User.class, userId);
+        return "/login.xhtml";
     }
+
 
     public void signOut() {
         userId = null;

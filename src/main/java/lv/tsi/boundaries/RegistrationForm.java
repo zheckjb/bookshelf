@@ -48,6 +48,10 @@ public class RegistrationForm {
         return "/registration-complete.xhtml?faces-redirect=true";
 
     }
+    @Transactional
+    public String registration(){
+        return "/registration.xhtml";
+    }
 
     public String getFullName() {
         return fullName;
