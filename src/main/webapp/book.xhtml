@@ -54,6 +54,14 @@
                             <th class="w3-hide-small">Description:</th>
                             <td>#{bookDetailsForm.book.description}</td>
                         </tr>
+                        <tr>
+                            <td colspan="2">
+                                <h:form>
+                                    <h:messages/>
+                                    <h:commandButton value = "Reserve" action="#{bookDetailsForm.reserve}" rendered="#{currentUser.signedIn}"/>
+                                </h:form>
+                            </td>
+                        </tr>
                     </table>
                 </div>
             </div>
